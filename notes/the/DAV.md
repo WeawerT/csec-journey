@@ -39,4 +39,15 @@ dirsearch -u http://ip
 Не совсем дефолтные, но креды из гугла (на старой версии webdev)
 Логин: wampp
 Пароль: xampp
-перебрав гугл 
+<img width="524" height="248" alt="Снимок экрана 2026-04-27 в 21 41 28" src="https://github.com/user-attachments/assets/f40732db-a12a-45fe-aba3-f36be4df8e4a" />
+Узнал что DEV имеет возможность загружать файлы 
+```
+put {namefile}
+```
+Делаем reverse 
+в revshells.com вводим ip tun0 и любой порт который буду слушать 
+выбираю php monkey
+<img width="542" height="499" alt="Снимок экрана 2026-04-27 в 21 45 53" src="https://github.com/user-attachments/assets/602645c4-99f5-4fd1-ab9f-1bc343b4db83" />
+я внтури как www-data сразу проверяю кто я и где я 
+<img width="695" height="668" alt="Снимок экрана 2026-04-27 в 21 45 21" src="https://github.com/user-attachments/assets/74dd248e-2827-4a02-b71e-fc3465b61a99" />
+
