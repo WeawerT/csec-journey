@@ -22,8 +22,8 @@ sudo nmap -sC -sV -A -T4 -p- 10.129.132.16
 sudo nmap -sU --top-ports 20 -v 10.129.132.16
 ```
 <img width="314" height="350" alt="Снимок экрана 2026-04-27 в 15 42 16" src="https://github.com/user-attachments/assets/e01d6ca9-8328-4d26-b1dc-515ea86e1b32" />
-
-sudo nmap -sV -sU -p 68 -v 10.129.132.16
+Опа сюда)
+Мне это что то дало, наверное...
 
 ### Порт 80 Стандартная страница сервера Ubuntu
 проверю какие папки есть 
