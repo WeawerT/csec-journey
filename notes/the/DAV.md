@@ -28,6 +28,7 @@ sudo nmap -sU --top-ports 20 -v 10.129.132.16
 ### Порт 80 Стандартная страница сервера Ubuntu
 проверю какие папки есть 
 dirsearch -u http://ip
-<img width="677" height="598" alt="Снимок экрана 2026-04-27 в 16 40 22" src="https://github.com/user-attachments/assets/e9f540df-fa29-4d84-9447-0a78d5ca2a66" />
+<img width="694" height="606" alt="Снимок экрана 2026-04-27 в 16 44 12" src="https://github.com/user-attachments/assets/d28862a9-6d13-424d-b554-5cdcc0b3f75f" />
+
 нужна авторизация но нет кредов что я могу сделать? 
 Использовать бурп и возможно он дает разные ошибки на логин и пароль 
