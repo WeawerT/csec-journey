@@ -40,6 +40,9 @@ dirsearch -u http://ip
 Логин: wampp
 Пароль: xampp
 <img width="524" height="248" alt="Снимок экрана 2026-04-27 в 21 41 28" src="https://github.com/user-attachments/assets/f40732db-a12a-45fe-aba3-f36be4df8e4a" />
+в папку dav лежит файл passwd.dav, пытался открыть его через john со словарем rockyou но не вышло пока отложу это
+<img width="607" height="67" alt="Снимок экрана 2026-04-27 в 21 55 34" src="https://github.com/user-attachments/assets/352fa5b2-fabe-44e1-b366-ae2df52b1718" />
+<img width="687" height="189" alt="Снимок экрана 2026-04-27 в 21 55 43" src="https://github.com/user-attachments/assets/2e1076df-0db0-4b9c-b6c2-326efdc14418" /> 
 Узнал что DEV имеет возможность загружать файлы 
 ```
 put namefile
@@ -50,4 +53,5 @@ put namefile
 <img width="542" height="499" alt="Снимок экрана 2026-04-27 в 21 45 53" src="https://github.com/user-attachments/assets/602645c4-99f5-4fd1-ab9f-1bc343b4db83" />
 я внтури как www-data сразу проверяю кто я и где я 
 <img width="695" height="668" alt="Снимок экрана 2026-04-27 в 21 45 21" src="https://github.com/user-attachments/assets/74dd248e-2827-4a02-b71e-fc3465b61a99" />
-
+в папке home есть два пользователя в wamp пусто а в merlin нет и там лежит 1й флаг 
+<img width="581" height="497" alt="Снимок экрана 2026-04-27 в 21 54 05" src="https://github.com/user-attachments/assets/a11adb3f-d560-4f9b-a6ab-52c06191af5c" />
