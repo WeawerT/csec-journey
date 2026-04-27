@@ -15,6 +15,8 @@
 ```bash
 sudo nmap -sC -sV -A -T4 -p- 10.129.132.16
 ```
+<img width="690" height="258" alt="Снимок экрана 2026-04-27 в 15 49 07" src="https://github.com/user-attachments/assets/af009e62-213f-4acd-b046-8285c3d80289" />
+
 видит только 80 порт проверю иначе
 ```
 sudo nmap -sU --top-ports 20 -v 10.129.132.16
