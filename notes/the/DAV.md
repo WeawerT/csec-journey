@@ -42,7 +42,7 @@ dirsearch -u http://ip
 <img width="524" height="248" alt="Снимок экрана 2026-04-27 в 21 41 28" src="https://github.com/user-attachments/assets/f40732db-a12a-45fe-aba3-f36be4df8e4a" />
 Узнал что DEV имеет возможность загружать файлы 
 ```
-put {namefile}
+put namefile
 ```
 Делаем reverse 
 в revshells.com вводим ip tun0 и любой порт который буду слушать 
