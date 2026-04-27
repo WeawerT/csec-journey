@@ -1,0 +1,14 @@
+# 🖥️ Отчет по машине: [Название машины / IP]
+
+**Дата:** YYYY-MM-DD  
+**Платформа:** [TryHackMe / HackTheBox / VulnHub]  
+**Сложность:** [Easy / Medium / Hard]  
+**Статус:** ✅ Решена / ⚠️ Частично / ❌ Застрял
+
+---
+
+## 📡 1. Разведка (Reconnaissance)
+
+### Nmap
+```bash
+nmap -sC -sV -A -T4 [IP] -oN nmap_scan.txt
