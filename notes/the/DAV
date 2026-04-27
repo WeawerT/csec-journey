@@ -15,7 +15,3 @@
 ```bash
 sudo nmap -sC -sV -A -T4 -p- 10.129.132.16
 ```
-
-**Результат:**[reference:1][reference:2]
-- `22/tcp` - SSH (OpenSSH 7.6p1)
-- `80/tcp` - HTTP (Apache httpd 2.4.29)
