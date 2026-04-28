@@ -51,7 +51,7 @@ DEV имеет возможность загружать файл, делаю р
 ```
 put namefile
 ```
-в revshells.com нужен ip tun0 и любой порт который буду слушать 
+в http://revshells.com нужен ip tun0 и любой порт который буду слушать 
 выбираю php monkey
 <img width="542" height="499" alt="Снимок экрана 2026-04-27 в 21 45 53" src="https://github.com/user-attachments/assets/602645c4-99f5-4fd1-ab9f-1bc343b4db83" />
 я внтури как www-data сразу проверяю кто я и где я 
