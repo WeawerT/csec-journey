@@ -56,6 +56,7 @@ put namefile
 я внтури как www-data сразу проверяю кто я и где я 
 <img width="695" height="668" alt="Снимок экрана 2026-04-27 в 21 45 21" src="https://github.com/user-attachments/assets/74dd248e-2827-4a02-b71e-fc3465b61a99" />
 в папке home есть два пользователя в wamp пусто а в merlin там лежит 1й флаг 
+
 ```
 cat user.txt
 ```
