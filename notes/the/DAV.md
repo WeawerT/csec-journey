@@ -117,7 +117,11 @@ john --format=md5crypt --wordlist=/usr/share/wordlists/rockyou.txt merlin.hash
 ```
 Aug 25 21:19:31 ubuntu sudo:   merlin : TTY=pts/0 ; PWD=/home/merlin ; USER=root ; COMMAND=/bin/nano /root/root.txt
 ```
-Заигравшись с идеями я упустил самое очевидное sudo -l 
+Заигравшись с идеями я упустил самое очевидное 
+```
+sudo -l
+```
+ 
 где черным по белому или белым по черному написано 
 www-data@ubuntu:/home/merlin$ sudo -l
 sudo -l - NOPASSWD: /bin/cat, что дает мне право читать root.txt, 
