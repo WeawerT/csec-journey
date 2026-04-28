@@ -77,8 +77,8 @@ chmod +x linpeas.sh
 #запуск (если слишком большой вывод + (> name.txt))
 ./linpeas
 ```
-linpeas показал что есть writebale sudoers.bak но у www-data есть возможность только читать, вектор закрыт
-так как NOPASSWD возникает ошибка "no tty" стоит создать псевдо терминал 
+linpeas показал что есть writebale sudoers.bak но у www-data есть возможность только читать вектор закрыт.
+Так как при чтении через sudo возникает ошибка "no tty" стоит создать псевдо терминал 
 ```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
