@@ -46,11 +46,12 @@ dirsearch -u http://ip
 в папку dav лежит файл passwd.dav, пытался открыть его через john со словарем rockyou но не вышло, возможно отвлекающий файл? стоит отложить его и изучить другие векторы
 <img width="607" height="67" alt="Снимок экрана 2026-04-27 в 21 55 34" src="https://github.com/user-attachments/assets/352fa5b2-fabe-44e1-b366-ae2df52b1718" />
 <img width="687" height="189" alt="Снимок экрана 2026-04-27 в 21 55 43" src="https://github.com/user-attachments/assets/2e1076df-0db0-4b9c-b6c2-326efdc14418" /> 
-DEV имеет возможность загружать файл, делаю реверс 
+DEV имеет возможность загружать файл, делаю реверс
+
 ```
 put namefile
 ```
-в <revshells.com> нужен ip tun0 и любой порт который буду слушать 
+в revshells.com нужен ip tun0 и любой порт который буду слушать 
 выбираю php monkey
 <img width="542" height="499" alt="Снимок экрана 2026-04-27 в 21 45 53" src="https://github.com/user-attachments/assets/602645c4-99f5-4fd1-ab9f-1bc343b4db83" />
 я внтури как www-data сразу проверяю кто я и где я 
