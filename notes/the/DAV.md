@@ -123,8 +123,10 @@ sudo -l
 ```
  
 где черным по белому или белым по черному написано 
+```
 www-data@ubuntu:/home/merlin$ sudo -l
 sudo -l - NOPASSWD: /bin/cat, что дает мне право читать root.txt, 
+```
 ```
 Matching Defaults entries for www-data on ubuntu:
     env_reset, mail_badpass,
