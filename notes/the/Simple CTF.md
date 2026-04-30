@@ -55,4 +55,51 @@ sudo nmap -sC -sV -p- 10.129.140.247 -T4
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
+curl http://10.129.140.247/robots.txt        
+#
+# "$Id: robots.txt 3494 2003-03-19 15:37:44Z mike $"
+#
+#   This file tells search engines not to index your CUPS server.
+#
+#   Copyright 1993-2003 by Easy Software Products.
+#
+#   These coded instructions, statements, and computer programs are the
+#   property of Easy Software Products and are protected by Federal
+#   copyright law.  Distribution and use rights are outlined in the file
+#   "LICENSE.txt" which should have been included with this file.  If this
+#   file is missing or damaged please contact Easy Software Products
+#   at:
+#
+#       Attn: CUPS Licensing Information
+#       Easy Software Products
+#       44141 Airport View Drive, Suite 204
+#       Hollywood, Maryland 20636-3111 USA
+#
+#       Voice: (301) 373-9600
+#       EMail: cups-info@cups.org
+#         WWW: http://www.cups.org
+#
+
+User-agent: *
+Disallow: /
+
+
+Disallow: /openemr-5_0_1_3 
+#
+# End of "$Id: robots.txt 3494 2003-03-19 15:37:44Z mike $".
+#
+                                                                                     
+┌──(w3awer㉿kali)-[~]
+└─$ curl http://10.129.140.247/simple    
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://10.129.140.247/simple/">here</a>.</p>
+<hr>
+<address>Apache/2.4.18 (Ubuntu) Server at 10.129.140.247 Port 80</address>
+</body></html>
+                            
+
 
