@@ -122,5 +122,29 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 Есть точка входа на ftp 21 как анонимус и ssh2222 это не стандартный порт для ssh
 подключаюсь по ftp
+```
+ftp anonymous@10.129.140.247
+```
+```
+ftp> ls
+229 Entering Extended Passive Mode (|||48263|)
+```
+```
+ftp> passive off
+Passive mode: off; fallback to active mode: off.
+ftp> ls
+drwxr-xr-x    2 ftp      ftp          4096 Aug 17  2019 pub
+ftp> cd pub
+250 Directory successfully changed.
+ftp> ls
+-rw-r--r--    1 ftp      ftp           166 Aug 17  2019 ForMitch.txt
+ftp> get ForMitch.txt
+226 Transfer complete.
+```
+```
+cat ForMitch.txt                             
+Dammit man... you'te the worst dev i've seen. You set the same pass for the system user, and the password is so weak... i cracked it in seconds. Gosh... what a mess!
+```
+
 
 
