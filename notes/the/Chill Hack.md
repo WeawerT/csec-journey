@@ -27,14 +27,19 @@
 ```
 sudo -l
 ```
+
 ```
 NOPASSWD: /home/apaar/.helpline.sh
 ```
 ```
 \cat /home/apaar/.helpline.sh
 ```
+msg2 - это стандартная ошибка которая идет на удаление, сейчас это дает возможность выполнить команды без пароля от пользователя apaar
 ```
-#!/bin/bash echo echo "Welcome to helpdesk. Feel free to talk to anyone at any time!" echo read -p "Enter the person whom you want to talk with: " person read -p "Hello user! I am $person, Please enter your message: " msg $msg 2>/dev/null echo "Thank you for your precious time!" 
+#!/bin/bash echo echo "Welcome to helpdesk. Feel free to talk to anyone at any time!" echo read -p "Enter the person whom you want to talk with: " person read -p "Hello user! I am $person, Please enter your message: " msg $msg 2>/dev/null echo "Thank you for your precious time!"
+```
+Возможно не понятно, я запрашиваю поддержку от пользователя Апаар без пароля и в сообщение с ошибкой я вставляю код который выполняется от имени Апаар, вот пример:
+
 
 
 
