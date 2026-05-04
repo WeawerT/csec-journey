@@ -136,3 +136,7 @@ login: milesdyson   password: cyborg007haloterminator
 
 И мы внутри 
 <img width="822" height="333" alt="Снимок экрана 2026-05-04 в 07 42 26" src="https://github.com/user-attachments/assets/4e5e1965-d845-4197-8e15-fa412bc9a7e8" />
+
+We have changed your smb password after system malfunction.
+Password: )s{A&2Z=F^n_E.B`
+
