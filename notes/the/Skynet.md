@@ -67,8 +67,45 @@ curl http://10.129.145.218
 
 <img width="1102" height="554" alt="Снимок экрана 2026-05-04 в 07 05 36" src="https://github.com/user-attachments/assets/b29dd085-3a4d-4795-9175-f6fabb77121d" />
 
+## Enum
+
 Порты 139 и 445 это samba, значит запускаю ```enum4linux``` для поиска кредов 
 
 Есть юзернеймы, так же виден доступ anonumous без пароля он станет 1 точкой входа для эскалации
 <img width="540" height="79" alt="Снимок экрана 2026-05-04 в 07 15 55" src="https://github.com/user-attachments/assets/6afc7089-b559-4b14-8044-026a63d80cfe" />
 
+```
+Password Complexity: Disabled
+Minimum Password Length: 5
+
+```
+
+```smbclient //10.129.145.218/anonymous -N ```
+```
+smb: \> pwd
+Current directory is \\10.129.145.218\anonymous\
+smb: \> ls 
+  .                                   D        0  Thu Nov 26 11:04:00 2020
+  ..                                  D        0  Tue Sep 17 03:20:17 2019
+  attention.txt                       N      163  Tue Sep 17 23:04:59 2019
+  logs                                D        0  Wed Sep 18 00:42:16 2019
+
+                9204224 blocks of size 1024. 5829032 blocks available
+smb: \> get attention.txt 
+getting file \attention.txt of size 163 as attention.txt (0.8 KiloBytes/sec) (average 0.8 KiloBytes/sec)
+```
+
+```
+smb: \> cd logs 
+smb: \logs\> ls
+  .                                   D        0  Wed Sep 18 00:42:16 2019
+  ..                                  D        0  Thu Nov 26 11:04:00 2020
+  log2.txt                            N        0  Wed Sep 18 00:42:13 2019
+  log1.txt                            N      471  Wed Sep 18 00:41:59 2019
+  log3.txt                            N        0  Wed Sep 18 00:42:16 2019
+
+                9204224 blocks of size 1024. 5829032 blocks available
+smb: \logs\> get log1.txt 
+getting file \logs\log1.txt of size 471 as log1.txt (2.4 KiloBytes/sec) (average 1.6 KiloBytes/sec)
+smb: \logs\> q
+```
