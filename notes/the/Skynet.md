@@ -58,8 +58,13 @@ curl http://10.129.145.218
 <img width="403" height="299" alt="Снимок экрана 2026-05-04 в 07 00 27" src="https://github.com/user-attachments/assets/ddf26da5-4385-44ff-bde1-d9327e75b01a" />
 
 ## Nmap
-
+Решаю просмотреть сразу все доступные порты с флагом ```-p-```
 ```
  sudo nmap -sC -sV -p- 10.129.145.218 -T4
 
 ```
+Довольно массивный вывод и 6 открытых портов 
+
+<img width="403" height="299" alt="Снимок экрана 2026-05-04 в 07 00 27" src="https://github.com/user-attachments/assets/8b17109c-3519-4976-a5a1-fa16de5ec410" />
+
+
