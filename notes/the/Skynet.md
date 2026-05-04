@@ -58,3 +58,8 @@ curl http://10.129.145.218
 <img width="403" height="299" alt="Снимок экрана 2026-05-04 в 07 00 27" src="https://github.com/user-attachments/assets/ddf26da5-4385-44ff-bde1-d9327e75b01a" />
 
 ## Nmap
+
+```
+ sudo nmap -sC -sV -p- 10.129.145.218 -T4
+
+```
