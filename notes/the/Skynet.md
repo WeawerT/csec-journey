@@ -79,8 +79,11 @@ Password Complexity: Disabled
 Minimum Password Length: 5
 
 ```
-
+Вхожу через smb и осматриваюсь 
 ```smbclient //10.129.145.218/anonymous -N ```
+
+Вижу один файл attention.txt и папку logs
+
 ```
 smb: \> pwd
 Current directory is \\10.129.145.218\anonymous\
@@ -94,7 +97,7 @@ smb: \> ls
 smb: \> get attention.txt 
 getting file \attention.txt of size 163 as attention.txt (0.8 KiloBytes/sec) (average 0.8 KiloBytes/sec)
 ```
-
+Тут лежит 3 файла но по весу можно понять что только 1 из них нам нужен, log1 тоже забираю и выхожу 
 ```
 smb: \> cd logs 
 smb: \logs\> ls
