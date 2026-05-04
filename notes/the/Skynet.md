@@ -65,6 +65,8 @@ curl http://10.129.145.218
 ```
 Довольно массивный вывод и 6 открытых портов 
 
-<img width="403" height="299" alt="Снимок экрана 2026-05-04 в 07 00 27" src="https://github.com/user-attachments/assets/8b17109c-3519-4976-a5a1-fa16de5ec410" />
+<img width="1102" height="554" alt="Снимок экрана 2026-05-04 в 07 05 36" src="https://github.com/user-attachments/assets/b29dd085-3a4d-4795-9175-f6fabb77121d" />
+
+Порты 139 и 445 это samba, значит запускаю ```enum4linux``` для поиска кредов 
 
 
