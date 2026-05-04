@@ -10,7 +10,8 @@
 ## 📡 1. Разведка 
 
 ```
-curl http://10.129.145.218                          
+curl http://10.129.145.218
+                         
 <!DOCTYPE html>
 <html>
         <head>
@@ -30,4 +31,13 @@ curl http://10.129.145.218
         </body>
 </html>
 
+```
+## Dirsearsh
+
+```
+301 -  313B  - /js  ->  http://10.129.145.218/js/
+301 -  316B  - /admin  ->  http://10.129.145.218/admin/
+301 -  317B  - /config  ->  http://10.129.145.218/config/
+301 -  314B  - /css  ->  http://10.129.145.218/css/
+301 -  323B  - /squirrelmail  ->  http://10.129.145.218/squirrelmail/
 ```
