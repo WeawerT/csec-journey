@@ -7,10 +7,7 @@
 
 ---
 ## Использованные интсрументы 
-dirsearch
-nmap
-enum4linux
-hydra
+dirsearch | nmap | enum4linux | hydra
 
 ---
 ## 📡 1. Разведка 
