@@ -6,7 +6,10 @@
 **Статус:** In progress
 
 ---
+Использованные интсрументы 
+---
 
+---
 ## 📡 1. Разведка 
 Сперва просмотрю что за сайт, цель найти комментарии и ошибки
 <img width="828" height="446" alt="Снимок экрана 2026-05-04 в 06 50 09" src="https://github.com/user-attachments/assets/6d671dce-a1ad-4402-b381-d7c905df9487" />
@@ -130,3 +133,6 @@ hydra -l milesdyson -P /home/w3awer/skynet/pass.txt 10.129.145.218 http-post-for
 <img width="687" height="206" alt="Снимок экрана 2026-05-04 в 07 39 38" src="https://github.com/user-attachments/assets/019ddead-304c-4693-af7d-27ae3460f676" />
 
 login: milesdyson   password: cyborg007haloterminator
+
+И мы внутри 
+<img width="822" height="333" alt="Снимок экрана 2026-05-04 в 07 42 26" src="https://github.com/user-attachments/assets/4e5e1965-d845-4197-8e15-fa412bc9a7e8" />
