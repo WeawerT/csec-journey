@@ -41,6 +41,7 @@ curl http://10.129.145.218
 ## Dirsearsh
 <img width="804" height="660" alt="Снимок экрана 2026-05-04 в 06 52 27" src="https://github.com/user-attachments/assets/52bb81db-e540-41ad-8740-abe16bc3dd46" />
 Отлично есть скрытые пути, однако код ошибки 301, "не авторизован" это значит где то есть страница входа.
+
 ```
 301 -  313B  - /js  ->  http://10.129.145.218/js/
 
@@ -52,6 +53,7 @@ curl http://10.129.145.218
 
 301 -  323B  - /squirrelmail  ->  http://10.129.145.218/squirrelmail/
 ```
+
 Да, страница входа на почту, пока отсутсвуеют креды, надо просмотреть открытые порты для их поиска.
 <img width="403" height="299" alt="Снимок экрана 2026-05-04 в 07 00 27" src="https://github.com/user-attachments/assets/ddf26da5-4385-44ff-bde1-d9327e75b01a" />
 
