@@ -136,7 +136,15 @@ login: milesdyson   password: cyborg007haloterminator
 
 И мы внутри 
 <img width="822" height="333" alt="Снимок экрана 2026-05-04 в 07 42 26" src="https://github.com/user-attachments/assets/4e5e1965-d845-4197-8e15-fa412bc9a7e8" />
+Просмотрев сообщение есть очень важное это: 
+<img width="741" height="261" alt="Снимок экрана 2026-05-04 в 07 45 51" src="https://github.com/user-attachments/assets/ad567c74-5d07-4b3d-bcf4-7039d3b48570" />
 
+```
 We have changed your smb password after system malfunction.
 Password: )s{A&2Z=F^n_E.B`
+```
+так же есть одно с двоичным кодом, вот он сразу с переводом 
+<img width="1374" height="671" alt="Снимок экрана 2026-05-04 в 07 49 11" src="https://github.com/user-attachments/assets/0941392a-9dcd-428a-ad21-2f07a12481a9" />
 
+и еще одно с будто песней похожей на вывод двоичного кода 
+<img width="721" height="473" alt="Снимок экрана 2026-05-04 в 07 50 50" src="https://github.com/user-attachments/assets/368b8d39-71d0-4713-8375-8f406428ab65" />
