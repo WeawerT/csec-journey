@@ -112,3 +112,14 @@ smb: \logs\> get log1.txt
 getting file \logs\log1.txt of size 471 as log1.txt (2.4 KiloBytes/sec) (average 1.6 KiloBytes/sec)
 smb: \logs\> q
 ```
+Читаю и вижу список предпологаемых паролей и юзернейм который был и в enum
+<img width="685" height="521" alt="Снимок экрана 2026-05-04 в 07 29 13" src="https://github.com/user-attachments/assets/06ba5e90-4813-4727-9c6b-b7518088d575" />
+## Hydra
+Значит начинаю брут, вот только к smb и ssh он не подошел, значит это может быть вход в почту 
+<img width="685" height="386" alt="Снимок экрана 2026-05-04 в 07 30 37" src="https://github.com/user-attachments/assets/df2719f6-f195-45f4-a235-105ab40f1078" />
+мне кажется это слишком удачный результат, но все исходит из неправильного запроса гидре 
+
+здесь же, если почитать можно увидеть что login form не login.php а redirect.php от того и такой результат 
+<img width="454" height="18" alt="Снимок экрана 2026-05-04 в 07 31 54" src="https://github.com/user-attachments/assets/e0d2d3e9-c5ce-4051-9d31-1583ef9a175b" />
+
+пересобираю команду и готово
