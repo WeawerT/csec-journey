@@ -148,3 +148,18 @@ Password: )s{A&2Z=F^n_E.B`
 
 и еще одно с будто песней похожей на вывод двоичного кода 
 <img width="721" height="473" alt="Снимок экрана 2026-05-04 в 07 50 50" src="https://github.com/user-attachments/assets/368b8d39-71d0-4713-8375-8f406428ab65" />
+
+```
+smbclient //10.128.175.131/milesdyson -U milesdyson
+```
+Отлично! Это похоже на путь к веб-ресурсу.
+
+CMS /45kra24zxs28v3yd означает:
+
+Сайт работает на CMS
+
+Есть каталог эндпоинт /45kra24zxs28v3yd
+
+```
+dirsearch -u http://10.128.175.131/45kra24zxs28v3yd/
+```
