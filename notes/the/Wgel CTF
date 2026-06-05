@@ -7,6 +7,11 @@
 
 ---
 
+## Использованные интсрументы 
+dirsearch | nmap | enum4linux | hydra
+
+---
+
 ## 📡 1. Разведка 
 
 ### Веб
@@ -15,4 +20,6 @@
 
 ### DIrsearch
 
-``` dirsearch -u http://10.113.153.249 ```
+```
+dirsearch -u http://10.113.153.249 
+```
