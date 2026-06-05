@@ -22,4 +22,5 @@ dirsearch | nmap | enum4linux | hydra
 
 ```
 dirsearch -u http://10.113.153.249 
+
 ```
