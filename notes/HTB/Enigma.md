@@ -50,3 +50,7 @@ ls -la /mnt/onboarding
 
 отлично есть доступ, а так же новый субдомен, по аналогии добавляем его в hosts 
 
+URL: http://support_001.enigma.htb
+Username: admin
+Password: Ne3s4rtars78s
+
