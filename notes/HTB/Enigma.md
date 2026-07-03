@@ -7,6 +7,8 @@
 
 ## 1. Разведка 
 
+Добавить домен в etc/hosts
+
 ```
 echo "10.129.39.79 enigma.htb" | sudo tee -a /etc/hosts
 ```
