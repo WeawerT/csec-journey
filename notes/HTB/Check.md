@@ -1,4 +1,4 @@
-# 🖥️ Отчет по машине: knowledge chek
+<img width="1011" height="419" alt="Снимок экрана — 2026-10-24 в 12 26 31" src="https://github.com/user-attachments/assets/6ead5b36-f55c-4a44-b7b1-85481fbce888" /><img width="1045" height="90" alt="Снимок экрана — 2026-10-24 в 11 45 10" src="https://github.com/user-attachments/assets/997efe9a-4d22-438a-92df-c4c7757a8d7b" /># 🖥️ Отчет по машине: knowledge chek
 **Платформа:** HackTheBox
 
 
@@ -19,6 +19,11 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 so starta est robots.txt i /admin/
+
+в админе форма входа 
+<img width="316" height="301" alt="Снимок экрана — 2026-10-24 в 10 31 19" src="https://github.com/user-attachments/assets/33c2f5ae-ee56-4477-9bb9-e7e8543f5156" />
+глянул вост пароля но не api и в принципе ничего не передает, это пустышка 
+
 
 ```
 dirsearch
@@ -63,4 +68,34 @@ sitemap.xml          (Status: 200) [Size: 431]
 theme                (Status: 301) [Size: 314] [--> http://10.129.42.249/theme/]
 Progress: 20469 / 20469 (100.00%)
 ```
+
+Есть код 200 к папкам backups  и Data, первая полностью пустая а во второй есть дерево папок, самой интересной кажется users а в ней лежит admin 
+
+<img width="493" height="401" alt="Снимок экрана — 2026-10-24 в 11 23 52" src="https://github.com/user-attachments/assets/ae295618-241d-43b7-bc6e-473b2040b7ad" />
+
+<img width="525" height="258" alt="Снимок экрана — 2026-10-24 в 11 24 05" src="https://github.com/user-attachments/assets/c6acbc7b-6044-45c5-9a1b-fcbc14ce3e11" />
+
+строка pwd это пароль но он захэширован, заносим его в crackstation и вот есть пароль за SHA1 
+
+<img width="961" height="421" alt="Снимок экрана — 2026-10-24 в 11 24 40" src="https://github.com/user-attachments/assets/7c3e6c63-060e-409e-8d5a-82456e8d57da" />
+
+на самом деле креды стандартные, можно было и в ручную перебирать и смотреть, но суть тут не в этом (хотя знание дефолта часто упрощает жизнь)
+
+итак исп гугл)
+
+<img width="1045" height="90" alt="Снимок экрана — 2026-10-24 в 11 45 10" src="https://github.com/user-attachments/assets/840140ac-c534-46f0-a271-88d747f31653" />
+
+результатов, тьма. ознакомившись это старая версия getsimple 3.3.15 тут если изучить понимаем что есть возможность редачить файл theme.php и он работает с коробки 
+
+<img width="896" height="375" alt="Снимок экрана — 2026-10-24 в 12 25 01" src="https://github.com/user-attachments/assets/2725b010-a40b-406f-a208-0d03aab400d0" />
+
+закидываем наш код
+
+<img width="1011" height="419" alt="Снимок экрана — 2026-10-24 в 12 26 31" src="https://github.com/user-attachments/assets/0c79b910-0525-43c3-889a-347d8bca9bef" />
+
+запускаем слушатель и обращаемся к нему 
+
+
+
+
 
